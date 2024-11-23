@@ -9,9 +9,9 @@
 #   Unix and VS: SSE2 support is enabled by default
 #    use BUILD_SQUISH_WITH_SSE2 and BUILD_SQUISH_WITH_ALTIVEC to override
 
-PROJECT(squish)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3...3.5)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3)
+PROJECT(squish)
 
 OPTION(BUILD_SQUISH_WITH_OPENMP "Build with OpenMP." ON)
 
